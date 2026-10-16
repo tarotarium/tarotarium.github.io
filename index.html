@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#12101c" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<link rel="apple-touch-icon" href="/icon-192.png" />
+		<title>Tarotarium</title>
+		<meta http-equiv="content-security-policy" content="default-src 'self'; frame-src 'none'; worker-src 'self'; connect-src 'self' https://openrouter.ai; img-src 'self' data: blob:; manifest-src 'self'; media-src 'self' data: blob:; object-src 'none'; script-src 'self' 'sha256-IK8u570nmvQcAMLOaOnie/Xvly3ELc01URxvhSQf9dQ='; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'none'">
+		<link href="/_app/immutable/entry/start.Cwc0G2Kr.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CNc6chPd.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/B8idZqfD.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/app.BXYcHXeg.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/0.B6wQSZqu.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/Dj5wrOZf.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CO4l4lvi.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DjL2Ylis.js" rel="modulepreload">
+		
+		<link href="/_app/immutable/assets/0.Dn5kXWYR.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_6t9gc4 = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.Cwc0G2Kr.js"),
+						import("/_app/immutable/entry/app.BXYcHXeg.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = '/service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised);
+						});
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+import{R as e,X as t,Y as n,Z as r}from"./B8idZqfD.js";var i=`tarot.reading`;function a(){try{let e=sessionStorage.getItem(i);return e?JSON.parse(e):null}catch{return null}}var o=r(n(a())),s={get current(){return e(o)},set(e){t(o,e,!0),e?sessionStorage.setItem(i,JSON.stringify(e)):sessionStorage.removeItem(i)}};export{s as t};
